@@ -17,7 +17,7 @@ export default buildConfig({
   editor: slateEditor({}),
   upload: {
     limits: {
-      fileSize: 5000000, // 5MB en bytes
+      fileSize: 500000000, // 500MB in bytes
     },
     useTempFiles: true,
     disableLocalStorage: false,

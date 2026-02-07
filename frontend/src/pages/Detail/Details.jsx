@@ -13,14 +13,22 @@ const Details = () => {
       <BackArrow />
       <div className="detail">
         {objectInfo && objectInfo.images ? (
-          objectInfo.images.map((item, index) => (
-            <img
-              src={import.meta.env.VITE_SERVER_IP + item.image.url}
-              // src={item.image.url} // SERVER-CODE
-              key={index}
-              alt={`object-${index}`}
-            />
-          ))
+          objectInfo.images.map((item, index) => {
+            const mediaUrl = import.meta.env.VITE_SERVER_IP + item.image.url;
+            const mimeType = item.image.mimeType;
+            const isVideo = mimeType?.startsWith("video/");
+
+            return isVideo ? (
+              <video src={mediaUrl} key={index} controls />
+            ) : (
+              <img
+                src={mediaUrl}
+                // src={item.image.url} // SERVER-CODE
+                key={index}
+                alt={`object-${index}`}
+              />
+            );
+          })
         ) : (
           <p>No images available</p>
         )}
