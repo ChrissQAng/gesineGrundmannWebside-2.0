@@ -14,7 +14,7 @@ import Hirsch from "./pages/Texts/Textpages/Hirsch/Hirsch";
 import Uhr from "./pages/Texts/Textpages/Uhr/Uhr";
 import Music from "./pages/Music/Music";
 import Imprint from "./pages/Imprint/Imprint";
-import Redirection from "./components/Redirection";
+import Insidebox from "./pages/Insidebox/Insidebox";
 
 function App() {
   return (
@@ -34,7 +34,7 @@ function App() {
           <Route path="/views" element={<Views />} />
           <Route path="/works" element={<Works />} />
           <Route path="/imprint" element={<Imprint />} />
-          <Route path="/redirection" element={<Redirection />} />
+          <Route path="/insidebox" element={<Insidebox />} />
           <Route path="/details/:id" element={<Details />} />
         </Routes>
       </BrowserRouter>

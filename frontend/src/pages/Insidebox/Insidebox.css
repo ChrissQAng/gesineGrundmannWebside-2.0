@@ -1,0 +1,21 @@
+.insidebox-wrapper {
+  min-height: 100vh;
+  background-color: #efefef;
+}
+
+.insidebox {
+  padding: 15%;
+}
+
+video {
+  width: 100%;
+  max-width: 800px;
+  display: block;
+  margin: 0 auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.insidebox p {
+  margin: 0 auto;
+}
