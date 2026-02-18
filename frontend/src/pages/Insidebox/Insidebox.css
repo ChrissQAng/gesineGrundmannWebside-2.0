@@ -4,10 +4,10 @@
 }
 
 .insidebox {
-  padding: 15%;
+  padding: 10%;
 }
 
-video {
+.insidebox video {
   width: 100%;
   max-width: 800px;
   display: block;
@@ -17,5 +17,6 @@ video {
 }
 
 .insidebox p {
-  margin: 0 auto;
+  margin: 0;
+  padding-top: 1rem;
 }
